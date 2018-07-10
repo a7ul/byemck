@@ -1,0 +1,23 @@
+{
+  "name": "joker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-styles": "^3.2.1",
+    "express": "^4.16.3",
+    "html-to-text": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "nodemon": "^1.17.5"
+  }
+}
