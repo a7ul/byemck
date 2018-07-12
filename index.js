@@ -1,6 +1,6 @@
 const express = require('express');
 const util = require('./src/util');
-const ansi = require('./src/ansi');
+const hello = require('./src/ansi/animations/hello');
 
 const app = express();
 
@@ -8,7 +8,7 @@ const app = express();
 app.get('/hello', async (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
-    return res.send(ansi.hello());
+    return res.send(hello.hello());
   }
   return next();
 });
@@ -19,7 +19,7 @@ app.get('/anime-hello', async (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
     const stream = util.getStream(req, res);
-    return ansi.animateHello(stream);
+    return hello.animateHello(stream);
   }
   return next();
 });
