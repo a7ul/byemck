@@ -8,7 +8,8 @@ const app = express();
 app.get('/hello', async (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
-    return res.send(hello.hello());
+    await res.send(hello.hello());
+    return null;
   }
   return next();
 });
@@ -19,7 +20,8 @@ app.get('/anime-hello', async (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
     const stream = util.getStream(req, res);
-    return hello.animateHello(stream);
+    await hello.animateHello(stream);
+    return null;
   }
   return next();
 });
