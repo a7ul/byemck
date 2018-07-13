@@ -10,6 +10,10 @@ It is hosted on heroku here:
 
 https://console-web-ui.herokuapp.com/
 
+or here
+
+http://console.atulr.com/
+
 
 
 # To run locally:

@@ -47,7 +47,7 @@ app.use('*', (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
     return res.send(`
-    Hint: curl https://console-web-ui.herokuapp.com/bye
+    Hint: curl http://console.atulr.com/bye
 
     Possible routes: 
     /bye - Gives bye bye animation 
