@@ -87,13 +87,13 @@ And now,
   levelupMckBlink: () => `
 And now,
    ___       ==== LEVEL UP =====        ^^^
-  (●_●)       ~ MCK to Ex-MCK ~        (●_●) 
+  (●_●)       ~ MCK to Ex-MCK ~        (■_■) 
  <[ \\/ ]>    ===================       (> <)                                                                     
 `,
   exmck: (text1 = '', text2 = '', text3 = '', header = '') => `
 ${header} 
    ^^^        ${text1}
-  (●_●)       ${text2}
+  (■_■)       ${text2}
   (> <)       ${text3}
 `,
 };
@@ -133,10 +133,10 @@ const animCollege = async (stream) => {
 const animIntern = async (stream) => {
   for (let i = 0; i < 4; i += 1) {
     stream.push(symbols.PAGE_BREAK);
-    stream.push(frames.intern('Lots of learnings, mistakes and struggles', 'later..'));
+    stream.push(frames.intern('Lots of learnings📚, mistakes🔥 and struggles💀', 'later..'));
     await delay(600);
     stream.push(symbols.PAGE_BREAK);
-    stream.push(frames.internCloseEyes('Lots of learnings, mistakes and struggles', 'later...'));
+    stream.push(frames.internCloseEyes('Lots of learnings📚, mistakes🔥 and struggles💀', 'later...'));
     await delay(500);
   }
   stream.push(symbols.PAGE_BREAK);
@@ -155,15 +155,15 @@ const animIntern = async (stream) => {
 const animFTE = async (stream) => {
   for (let i = 0; i < 8; i += 1) {
     stream.push(symbols.PAGE_BREAK);
-    stream.push(frames.fte('Key takeaways: Memories, Friendships & *Values* ', ' Things to improve: Bugs, escalations & nightouts', 'Last 3 years..'));
+    stream.push(frames.fte('Things that went well: Memories💐, Friendships😎 & *Values*🌈', ' Things to improve: Bugs🐞, escalations🔪 & nightouts🤤', 'Last 3 years..'));
     await delay(600);
     stream.push(symbols.PAGE_BREAK);
-    stream.push(frames.fteCloseEyes('Key takeaways: Memories, Friendships & *Values* ', ' Things to improve: Bugs, escalations & nightouts', 'Last 3 years...'));
+    stream.push(frames.fteCloseEyes('Things that went well: Memories💐, Friendships😎 & *Values*🌈', ' Things to improve: Bugs🐞, escalations🔪 & nightouts🤤', 'Last 3 years...'));
     await delay(500);
   }
 
   stream.push(symbols.PAGE_BREAK);
-  stream.push(frames.fte('PEOPLE !!!', '', 'Things I\'ll miss 😞 '));
+  stream.push(frames.fte('PEOPLE !!! 🎉', '', 'Things I\'ll miss 😞 '));
   await delay(3000);
 
   stream.push(symbols.PAGE_BREAK);
@@ -187,7 +187,7 @@ const animExMck = async (stream) => {
     'I hope we can keep in touch 🙏',
     'My Email: atulanand94@gmail.com',
     'Website: http://atulr.com',
-    'Its not a good bye! ...',
+    'Thank you for everything 🙂 ...',
   ));
 };
 

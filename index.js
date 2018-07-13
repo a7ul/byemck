@@ -3,6 +3,8 @@ const util = require('./src/util');
 const hello = require('./src/ansi/animations/hello');
 const bye = require('./src/ansi/animations/bye');
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 // simple hello route
@@ -28,7 +30,7 @@ app.get('/anime-hello', async (req, res, next) => {
 });
 app.use('/anime-hello', express.static('static/hello'));
 
-// animated example
+// bye bye example
 app.get('/bye', async (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
@@ -40,5 +42,21 @@ app.get('/bye', async (req, res, next) => {
 });
 app.use('/bye', express.static('static/hello')); // TODO change this
 
+// 404 - not found
+app.use('*', (req, res, next) => {
+  const userAgent = req.headers['user-agent'];
+  if (util.isCommandline(userAgent)) {
+    return res.send(`
+    This is not a valid route: \n
+    Please hit :
+    /bye - Gives bye bye animation 
+    /hello - Gives a nice hello
+    /anime-hello - Gives a nice animated hello
+  `);
+  }
+  return next();
+});
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+app.use('*', express.static('static/404'));
+
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
