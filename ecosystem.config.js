@@ -1,6 +1,8 @@
 module.exports = {
   apps: [{
     name: 'CWUI',
+    exec_mode: 'cluster',
+    instances: 'max',
     script: 'index.js',
     env: {
       NODE_ENV: 'development',
