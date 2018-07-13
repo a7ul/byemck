@@ -40,7 +40,7 @@ app.get('/bye', async (req, res, next) => {
   }
   return next();
 });
-app.use('/bye', express.static('static/hello')); // TODO change this
+app.use('/bye', express.static('static/bye'));
 
 // 404 - not found
 app.use('*', (req, res, next) => {
