@@ -52,6 +52,8 @@ app.use('*', (req, res, next) => {
     /bye - Gives bye bye animation 
     /hello - Gives a nice hello
     /anime-hello - Gives a nice animated hello
+
+    Hint: curl https://console-web-ui.herokuapp.com/bye
   `);
   }
   return next();
