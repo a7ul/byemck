@@ -47,13 +47,13 @@ app.use('*', (req, res, next) => {
   const userAgent = req.headers['user-agent'];
   if (util.isCommandline(userAgent)) {
     return res.send(`
-    This is not a valid route: \n
-    Please hit :
-    /bye - Gives bye bye animation 
-    /hello - Gives a nice hello
-    /anime-hello - Gives a nice animated hello
-
     Hint: curl https://console-web-ui.herokuapp.com/bye
+
+    Possible routes: 
+    /bye - Gives bye bye animation 
+    /hello - Gives a nice and simple hello
+    /anime-hello - Gives a nice animated hello
+   
   `);
   }
   return next();
