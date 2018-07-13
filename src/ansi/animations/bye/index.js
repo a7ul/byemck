@@ -8,94 +8,109 @@ const delay = async millisec => new Promise((resolve) => {
 const frames = {
   hi: (text = '') => `
 
-   {\\__/}   
+   {\\__/}
     (●_●)    ${text}
-    (> <)                                                                                                  
+    (> <)
+
 `,
   lastDay: (text1 = '', text2 = '', text3 = '') => `
 
-   {\\__/}   ${text1} 
-    (●_●)    ${text2}  
-    (>  )>   ${text3}                                                                                                
+   {\\__/}   ${text1}
+    (●_●)    ${text2}
+    (>  )>   ${text3}
+
 `,
   college: (text1 = '', text2 = '') => `
 
-    (__]__   
-    (●_●)    ${text1} 
-    (> <)    ${text2}                                                                                     
-`,
+    (__]__
+    (●_●)    ${text1}
+    (> <)    ${text2}
+
+   `,
   collegeCloseEye: (text1 = '', text2 = '') => `
 
-    (__]__   
-    ( _ )    ${text1} 
-    (> <)    ${text2}                                                                                                                                                               
-`,
+    (__]__
+    ( _ )    ${text1}
+    (> <)    ${text2}
+
+   `,
   levelupCollege: () => `
   Basically,
     (__]__     ==== LEVEL UP =====        ~~~
-    (●_●)    ~ UNEMPLOYED -> INTERN ~    (●_●) 
-    (> <)      ===================      <(   )>                                                                     
-`,
+    (●_●)    ~ UNEMPLOYED -> INTERN ~    (●_●)
+    (> <)      ===================      <(   )>
+
+   `,
   levelupCollegeBlink: () => `
   Basically,
     (__]__     ==== LEVEL UP =====        ~~~
-    (●_●)    ~ UNEMPLOYED to INTERN ~    (●_●) 
-    (> <)      ===================      <(   )>                                                                     
-`,
+    (●_●)    ~ UNEMPLOYED to INTERN ~    (●_●)
+    (> <)      ===================      <(   )>
+
+   `,
   intern: (text1 = '', text2 = '') => `
 
    ~~~        ${text1}
   (●_●)       ${text2}
-  (> <)                                                                         
-`,
+  (> <)
+
+ `,
   internCloseEyes: (text1 = '', text2 = '') => `
 
    ~~~        ${text1}
   ( _ )       ${text2}
-  (> <)                                                                         
-`,
+  (> <)
+
+ `,
   levelupIntern: () => `
 Finally,
    ~~~       ==== LEVEL UP =====        ___
-  (●_●)       ~ INTERN -> FTE ~        (●_●) 
-  (> <)      ===================      <[ \\/ ]>                                                                     
-`,
+  (●_●)       ~ INTERN -> FTE ~        (●_●)
+  (> <)      ===================      <[ \\/ ]>
+
+ `,
   levelupInternBlink: () => `
 Finally,
    ~~~       ==== LEVEL UP =====        ___
-  (●_●)       ~ INTERN to FTE ~        (●_●) 
-  (> <)      ===================      <[ \\/ ]>                                                                     
-`,
+  (●_●)       ~ INTERN to FTE ~        (●_●)
+  (> <)      ===================      <[ \\/ ]>
+
+ `,
   fte: (text1 = '', text2 = '', header = '') => `
 ${header}
-   ___        
+   ___
   (●_●)       ${text1}
- <[ \\/ ]>    ${text2}                                                                     
+ <[ \\/ ]>    ${text2}
+
 `,
   fteCloseEyes: (text1 = '', text2 = '', header = '') => `
 ${header}
-   ___        
+   ___
   ( _ )       ${text1}
- <[ \\/ ]>    ${text2}                                                                     
+ <[ \\/ ]>    ${text2}
+
 `,
   levelupMck: () => `
 And now,
    ___       ==== LEVEL UP =====        ^^^
-  (●_●)       ~ MCK -> Ex-MCK ~        (●_●) 
- <[ \\/ ]>    ===================       (> <)                                                                     
+  (●_●)       ~ MCK -> Ex-MCK ~        (●_●)
+ <[ \\/ ]>    ===================       (> <)
+
 `,
   levelupMckBlink: () => `
 And now,
    ___       ==== LEVEL UP =====        ^^^
-  (●_●)       ~ MCK to Ex-MCK ~        (■_■) 
- <[ \\/ ]>    ===================       (> <)                                                                     
+  (●_●)       ~ MCK to Ex-MCK ~        (■_■)
+ <[ \\/ ]>    ===================       (> <)
+
 `,
   exmck: (text1 = '', text2 = '', text3 = '', header = '') => `
-${header} 
+${header}
    ^^^        ${text1}
   (■_■)       ${text2}
   (> <)       ${text3}
-`,
+
+ `,
 };
 
 
@@ -198,5 +213,6 @@ module.exports = async (stream) => {
   await animIntern(stream);
   await animFTE(stream);
   await animExMck(stream);
+  stream.push('\n');
   stream.push(null);
 };

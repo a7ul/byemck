@@ -1,14 +1,13 @@
 {
   "name": "console-web-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "Examples to show case how to build web based UI (that can be invoked using curl) for console applications using Javascript(NodeJS).",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "start:prod": "pm2 -i max --name \"consolewebui\" start index.js",
+    "start:prod": "(pm2 delete cwui || true) && pm2 -i max --name cwui start index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "ansi-styles": "^3.2.1",
@@ -21,5 +20,14 @@
     "eslint-plugin-import": "^2.13.0",
     "nodemon": "^1.17.5",
     "pm2": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/master-atul/console-web-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/master-atul/console-web-ui/issues"
+  },
+  "homepage": "https://github.com/master-atul/console-web-ui#readme",
+  "author": "atulanand94@gmail.com"
 }
