@@ -4,6 +4,14 @@ Examples to show case how to build web based UI (that can be invoked using curl)
 
 Blog post: <coming soon>
 
+# Demo version:
+
+It is hosted on heroku here:
+
+https://console-web-ui.herokuapp.com/
+
+
+
 # To run locally:
 
 1. `git clone` this repo
