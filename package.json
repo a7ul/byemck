@@ -1,7 +1,7 @@
 {
-  "name": "console-web-ui",
+  "name": "byemck",
   "version": "1.0.0",
-  "description": "Examples to show case how to build web based UI (that can be invoked using curl) for console applications using Javascript(NodeJS).",
+  "description": "A fun farewell console web service",
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon index.js",
@@ -22,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/master-atul/console-web-ui.git"
+    "url": "git+https://github.com/master-atul/byemck.git"
   },
   "bugs": {
-    "url": "https://github.com/master-atul/console-web-ui/issues"
+    "url": "https://github.com/master-atul/byemck/issues"
   },
-  "homepage": "https://github.com/master-atul/console-web-ui#readme",
+  "homepage": "https://github.com/master-atul/byemck#readme",
   "author": "atulanand94@gmail.com"
 }

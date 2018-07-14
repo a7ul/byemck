@@ -33,8 +33,11 @@ body {
 
 .code-text {
   padding-bottom: 30px;
+  padding-top:10px;
   font-weight: bold;
+  font-size: 16px;
 }
+
 
 .help-text {
   padding: 20px 0;

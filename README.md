@@ -1,6 +1,6 @@
-# console-web-ui
+# byemck
 
-Examples to show case how to build web based UI (that can be invoked using curl) for console applications using Javascript(NodeJS).
+A fun goodbye console web service made in Javascript.
 
 Blog post: <coming soon>
 
@@ -8,11 +8,11 @@ Blog post: <coming soon>
 
 It is hosted on heroku here:
 
-https://console-web-ui.herokuapp.com/
+https://byemck.herokuapp.com/
 
 or here
 
-http://console.atulr.com/
+http://byemck.atulr.com/
 
 
 
@@ -28,17 +28,9 @@ After that open another terminal and do:
 
 **Simple Example**
 
-`curl http://localhost:3000/hello/`
+`curl http://localhost:3000/`
 
 or
 
-`wget -q -O - http://localhost:3000/hello/`
+`wget -q -O - http://localhost:3000/`
 
-
-**Animated Example**
-
-`curl http://localhost:3000/anime-hello/`
-
-or
-
-`wget -q -O - http://localhost:3000/anime-hello/`
