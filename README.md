@@ -2,7 +2,7 @@
 
 A fun goodbye console web service made in Javascript.
 
-Blog post: <coming soon>
+Blog post: https://medium.com/@atulanand94/building-web-based-uis-for-terminals-using-javascript-60b5eee31213
 
 # Demo version:
 
