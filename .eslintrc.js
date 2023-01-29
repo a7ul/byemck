@@ -1,3 +1,7 @@
 module.exports = {
-    "extends": "airbnb-base"
+  extends: "airbnb-base",
+  rules: {
+    quotes: 0,
+    "implicit-arrow-linebreak": 0,
+  },
 };
