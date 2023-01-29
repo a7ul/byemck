@@ -6,15 +6,9 @@ Blog post: https://medium.com/@atulanand94/building-web-based-uis-for-terminals-
 
 # Demo version:
 
-It is hosted on heroku here:
-
-https://byemck.herokuapp.com/
-
-or here
+It is hosted on GCP via cloud functions here:
 
 http://byemck.atulr.com/
-
-
 
 # To run locally:
 
@@ -33,4 +27,3 @@ After that open another terminal and do:
 or
 
 `wget -q -O - http://localhost:3000/`
-
